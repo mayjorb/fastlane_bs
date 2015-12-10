@@ -1,5 +1,6 @@
 // content related overrides/styles
 
+@headings-font-weight:    400;
 
 .field-type-availability-calendar-booking-formlet .form-submit {
   position: inherit !important;
@@ -13,6 +14,7 @@
 form.Drupal-availabilityCalendar-BookingFormlet-processed button.form-submit {
   .btn();
   .btn-success();
+  margin-top: 1em;
 }
 
 input.acbf-reset-both,
@@ -25,7 +27,7 @@ input.acbf-reset-to {
   font-weight: inherit;
   text-align: inherit;
   vertical-align: inherit;
-  padding: inherit;
+  padding: @padding-small-vertical @padding-small-horizontal;
   font-size: inherit;
   line-height: inherit;
   border-radius: inherit;
@@ -34,7 +36,41 @@ input.acbf-reset-to {
   border-color: inherit;
 }
 
+// remove border under the caption in the calendar
+.cal caption {
+  margin: 6px 6px 0;
+  border-bottom: none;
+}
+
+.cal table {
+  color: @bfastlane-text-color;
+  border-color: @gray-light;
+}
+
 
 div.webform-component--delivery-address--state label.control-label {
   display: block;
 }
+
+
+@media (min-width: 768px) {
+
+}
+
+// html {
+//   // background-color: #513628;
+//   background-color: @bfastlane-bg-color;
+// }
+
+body {
+  // border-bottom: 4px solid @bfastlane-gold;
+}
+
+footer.container {
+  // background-image: url("../images/footer-element.png");
+  // min-height: 150px;
+  // background-position: right bottom;
+  // background-repeat: no-repeat;
+  // border-bottom: 10px solid #d49000;
+}
+

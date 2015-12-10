@@ -7,3 +7,132 @@
 
 // Set the proper directory for the Bootstrap Glyphicon font.
 @icon-font-path: '../bootstrap/fonts/';
+
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+@gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+// @brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-primary:         #655542;
+// @brand-primary:         #513628;
+// @brand-success:         #5cb85c;
+@brand-success:         #aac789;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f;
+
+// calendar colors
+@brand-available:       #aac789;
+@brand-rented:          #d49000;
+@brand-pending:         #ffffe0;
+@brand-notavailable:    #909090;
+
+
+@bfastlane-text-color:        #655542;
+@bfastlane-bg-color:          #513628;
+@bfastlane-link-color:        #ac162c;  // red
+// @bfastlane-link-color:        #0098ce;   // blue
+@bfastlane-gold:        #d49000;  // red
+
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+//
+@font-family-sans-serif:  "Montserrat", Helvetica, sans-serif;
+
+
+//** By default, this inherits from the `<body>`.
+@headings-font-weight:    400;
+
+
+h1, .h1 { .text-uppercase(); }
+h2, .h2 { .text-uppercase(); }
+h3, .h3 { .text-uppercase(); }
+h4, .h4 { .text-uppercase(); }
+h5, .h5 { .text-uppercase(); }
+h6, .h6 { .text-uppercase(); }
+
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+@body-bg:               #fff;
+//** Global text color on `<body>`.
+@text-color:            @bfastlane-text-color;
+
+//** Global textual link color.
+@link-color:            @bfastlane-link-color;
+//** Link hover color set via `darken()` function.
+@link-hover-color:      darken(@link-color, 15%);
+//** Link hover decoration.
+@link-hover-decoration: underline;
+
+
+
+
+//== Panels
+//
+//##
+@panel-primary-text:          #fff;
+@panel-primary-border:        @bfastlane-gold;
+@panel-primary-heading-bg:    @bfastlane-bg-color;
+
+
+// button for calendar colors
+@btn-available-color:         @bfastlane-text-color;
+@btn-available-bg:            @brand-available;
+@btn-available-border:        darken(@btn-available-bg, 5%);
+
+@btn-rented-color:            @bfastlane-text-color;
+@btn-rented-bg:               @brand-rented;
+@btn-rented-border:           darken(@btn-rented-bg, 5%);
+
+@btn-pending-color:           @bfastlane-text-color;
+@btn-pending-bg:              @brand-pending;
+@btn-pending-border:          darken(@btn-pending-bg, 5%);
+
+@btn-notavailable-color:           @bfastlane-text-color;
+@btn-notavailable-bg:              @brand-notavailable;
+@btn-notavailable-border:          darken(@btn-notavailable-bg, 5%);
+
+
+// Alternate buttons
+// --------------------------------------------------
+
+.btn-available {
+  .button-variant(@btn-available-color; @btn-available-bg; @btn-available-border);
+}
+.btn-rented {
+  .button-variant(@btn-rented-color; @btn-rented-bg; @btn-rented-border);
+}
+
+.btn-pending {
+  .button-variant(@btn-pending-color; @btn-pending-bg; @btn-pending-border);
+}
+
+.btn-notavailable {
+  .button-variant(@btn-notavailable-color; @btn-notavailable-bg; @btn-notavailable-border);
+}
+
+// make the features field stand out
+.node-type-motorcycle .field-name-field-features div.field-label {
+  font-weight: 400;
+  color: @bfastlane-text-color;
+  margin-top: 1em;
+  .text-uppercase();
+}
+
