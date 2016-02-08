@@ -15,6 +15,7 @@ form.Drupal-availabilityCalendar-BookingFormlet-processed button.form-submit {
   .btn();
   .btn-success();
   margin-top: 1em;
+  margin-bottom: 1em ;
 }
 
 input.acbf-reset-both,
@@ -36,6 +37,15 @@ input.acbf-reset-to {
   border-color: inherit;
 }
 
+.acbf-date input[type=text] {
+  width: 25em;
+}
+
+// form.Drupal-availabilityCalendar-BookingFormlet-processed .form-select {
+//   width: 50%;
+// }
+
+
 // remove border under the caption in the calendar
 .cal caption {
   margin: 6px 6px 0;
@@ -50,6 +60,11 @@ input.acbf-reset-to {
 
 div.webform-component--delivery-address--state label.control-label {
   display: block;
+}
+
+button.webform-submit {
+  .btn();
+  .btn-success();
 }
 
 
@@ -74,3 +89,21 @@ footer.container {
   // border-bottom: 10px solid #d49000;
 }
 
+// hide the duration field on the booking formlet
+#availability-calendar-booking-formlet-form-1 .form-item-duration-display {
+  display: none;
+}
+
+
+.page-motorcycles .node-teaser {
+  margin-bottom: 1.5em;
+}
+
+.page-node-done .links { // hide the back to form link
+  display: none;
+}
+
+
+select#edit-submitted-rental-details-deliver-pickup-time {
+  width: 50%;
+}

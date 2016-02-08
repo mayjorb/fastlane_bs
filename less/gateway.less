@@ -1,0 +1,39 @@
+// @import '../bootstrap/less/variables.less';
+// @import '../bootstrap/less/buttons.less';
+
+@import 'bootstrap.less';
+@import 'variable-overrides.less';
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  color: #655542;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 1.75em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+div#header img {
+  width: 250px;
+  margin-right: 20px;
+}
+
+div#header {
+  border-bottom: none;
+}
+
+
+div#content > div a {
+  .btn();
+  .btn-default();
+}
+
+div#content input[type="submit"] {
+  .btn();
+  .btn-success();
+}
