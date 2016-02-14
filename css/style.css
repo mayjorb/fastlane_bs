@@ -7576,6 +7576,27 @@ button.webform-submit .badge {
 select#edit-submitted-rental-details-deliver-pickup-time {
   width: 50%;
 }
+/* Social Media Sharing Block */
+.service-links {
+  float: right !important;
+  padding: 0 0 1.25em 1.5em;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-size: 12px;
+}
+.service-links:before {
+  color: #555555;
+  content: "Share This: ";
+  display: block;
+}
+.service-links a {
+  color: #333333;
+  display: block;
+  margin: 0;
+}
+.service-links img {
+  float: right !important;
+  border: none;
+}
 html.overlay-open .navbar-fixed-top {
   z-index: 400;
 }

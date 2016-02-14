@@ -2,7 +2,7 @@ name = Fastlane
 description = Uses the Bootstrap Framework LESS source files and must be compiled (not for beginners).
 core = 7.x
 base theme = bootstrap
-version= 7.x-1.1
+version= 7.x-1.2
 
 
 ;;;;;;;;;;;;;;;;;;;;;
@@ -47,4 +47,3 @@ scripts[] = 'bootstrap/js/transition.js'
 
 ; Disable BootstrapCDN so the compiled LESS source files can be used.
 settings[bootstrap_cdn] = ''
-

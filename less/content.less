@@ -107,3 +107,31 @@ footer.container {
 select#edit-submitted-rental-details-deliver-pickup-time {
   width: 50%;
 }
+
+/* Social Media Sharing Block */
+.service-links {
+  .pull-right();
+  padding: 0 0 1.25em 1.5em;
+  font-family: @font-family-sans-serif;
+  font-size: @font-size-small;
+  //line-height: 1.75em;
+}
+
+.service-links:before {
+  color: @gray;
+  content: "Share This: ";
+  // border-bottom: 1px dotted @gray-light;
+  display: block;
+}
+
+.service-links a {
+  color: @gray-dark;
+  display: block;
+  margin: 0;
+  // border-bottom: 1px dotted @gray-light;
+}
+
+.service-links img {
+  .pull-right();
+  border: none;
+}
